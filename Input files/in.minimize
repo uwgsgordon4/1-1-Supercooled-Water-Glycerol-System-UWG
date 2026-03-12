@@ -1,0 +1,34 @@
+# ===========================
+#  Minimal LAMMPS input
+# ===========================
+
+units       real
+atom_style  full
+boundary    p p p
+
+# -----------------------------
+# Potential definitions
+# -----------------------------
+pair_style      lj/class2/coul/long 10.0
+pair_modify     tail yes
+bond_style      class2
+angle_style     class2
+dihedral_style  class2
+improper_style  class2
+kspace_style    pppm 1.0e-4
+
+# -----------------------------
+# System data
+# -----------------------------
+read_data       system2000.data
+
+neighbor        2.0 bin
+neigh_modify    every 1 delay 0 check yes
+
+# -----------------------------
+# Energy minimization
+# -----------------------------
+min_style       cg
+minimize        1.0e-6 1.0e-8 20000 200000
+
+write_restart	minimized.restart
