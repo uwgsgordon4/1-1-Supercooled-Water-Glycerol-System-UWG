@@ -1,6 +1,6 @@
 # System Preparation and All-Atom Molecular Dynamics Simulation of Water-Glycerol Mixtures at Supercooled Temperatures Using LUNAR and LAMMPS  
   
-**Authors:** Stephaine Gordon, Ana Stanescu, John Hansen  
+**Authors:** Stephaine Gordon,  John Hansen,  Ana Stanescu
 **Affiliations:**  
 - School of Computing, Analytics, and Modeling, University of West Georgia, USA  
 - School of Field Investigations and Experimental Sciences, University of West Georgia, USA
